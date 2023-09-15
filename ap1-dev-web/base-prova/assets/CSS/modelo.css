@@ -1,0 +1,122 @@
+:root{
+    --color-blue: #253161;
+    --color-segundary: #2c4b8e;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url(../img/bg-modelos.png);
+    background-size: cover;
+}
+
+.container-header{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+    padding: 10px;
+    height: 15vw;
+}
+
+.navbar{
+	display: flex;
+    align-items: center;
+}
+
+.navbar ul{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+	gap: 20px;
+	background-color: var(--color-segundary);
+	padding: 10px;
+	border-radius: 15px;
+	transition: 0.4s ease-in-out;
+    width: 500px;
+    height: 30px;
+}
+
+.navbar li{
+    margin: 10px;
+}
+
+.navbar a{
+	text-decoration: none;
+	font-size: 25px;
+	font-family: Impact, Haettenschweiler, sans-serif;
+	color: white;
+	transition: 0.2s ease-in-out;
+}
+
+.navbar a:hover{
+	color: #fff;
+}
+
+.car-type{
+    display: inline-block;
+
+    margin: 1rem;
+    padding: 1rem;
+
+    border: 6px solid var(--color-pink);
+    border-radius: 1rem;
+
+    background-color: rgb(233, 225, 233);
+}
+
+.car-type a{
+    text-decoration: none;
+}
+
+.car-type img{
+    width: 18.75rem;
+    height: 15rem;
+}
+
+.car-type p,
+.car-type button{
+    font-size: 1rem;
+    position: relative;
+    bottom: 10px;
+}
+
+.car-type button{
+    padding: 5px;
+
+    background-color: var(--color-blue);
+    border: 1px solid var(--color-segundary);
+    border-radius: 10px;
+
+    color: white;
+
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.car-type button:hover{
+    transform: scale(1.5);
+    background-color:var(--color-segundary);
+    color: white;
+}
+
+.container{
+    text-align: center;
+    margin: 2rem;
+}
+
+.footer-content{
+    background-color: black;
+
+    color: white;
+    text-align: center;
+
+    margin: 20px;
+    padding: 20px;
+}
